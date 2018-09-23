@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages-deploy bu",
+    "clean-source": "rimraf README.md src webroot package.json"
   },
   "repository": {
     "type": "git",
@@ -16,9 +18,13 @@
   "bugs": {
     "url": "https://github.com/Kolimator/Furry-Game.git/issues"
   },
-  "homepage": "https://github.com/Kolimator/Furry-Game.git#readme",
+  "homepage": "https://kolimator.github.io/Furry-game/",
   "devDependencies": {
+    "gh-pages-deploy": "^0.5.0",
     "webpack": "^4.2.0",
     "webpack-cli": "^2.0.12"
+  },
+  "dependencies": {
+    "gh-pages": "^2.0.0"
   }
 }
