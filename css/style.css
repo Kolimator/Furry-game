@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section#score {
+    width: 100%;
+}
+
+#board {
+    width: 640px;
+    height: 640px;
+    margin: 1em auto;
+}
+
+#board  > div {
+    border: 1px solid black;
+    float: left;
+    width: 64px;
+    height: 64px;
+}
+
+
+section#score div {
+    width: 10em;
+    height: 3em;
+    text-align: center;
+    padding: 0.5em;
+    background-color: rgba(211,211,211, 0.75);
+    border: 1px solid lightgray;
+    border-radius: 1px;
+    box-shadow: 1px 1px 5px 1px lightgray;
+    margin: 1em auto;
+}
+
+
+
+
+.furry {
+    background-image: url('../images/furry.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.coin {
+    background-image: url('../images/coin.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section#over {
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+    background-color: cyan;
+
+}
+section#over button {
+    position: absolute;
+    top:50%;
+    left: 30%;
+
+    display: inline-block;
+    background:transparent;
+    padding:1rem 1rem;
+    margin:0 1rem;
+    transition:all .5s ease;
+    color:#41403E;
+    font-size:2rem;
+    letter-spacing:1px;
+    outline:none;
+    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.4);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border:solid 2px #41403E;
+
+    text-align: center;
+    font-family: 'Princess Sofia', cursive;
+    cursor: pointer;
+
+
+}
+section#over button:hover{
+    box-shadow:2px 8px 4px -6px hsla(0,0%,0%,.3)
+}
+
+
+
+
+section#over div {
+    position: absolute;
+    top :50%;
+    left:50%;
+    display: inline-block;
+    background:transparent;
+    padding:1rem 1rem;
+    margin:0 1rem;
+    transition:all .5s ease;
+    color:#41403E;
+    font-size:2rem; !important;
+    letter-spacing:1px;
+    outline:none;
+    box-shadow: 20px 38px 34px -26px hsla(0,0%,0%,.2);
+    border-radius: 255px 15px 225px 15px/15px 225px 15px 255px;
+    border:solid 2px #41403E;
+
+    text-align: center;
+    font-family: 'Princess Sofia', cursive;
+}
+
+
+
+
+
+.invisible {
+    display: none;
+}
